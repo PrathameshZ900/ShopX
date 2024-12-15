@@ -1,0 +1,16 @@
+/* Container for the banner */
+.banner-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 12.4378%; /* Responsive aspect ratio for the banner */
+    overflow: hidden; /* To prevent the image from overflowing */
+  }
+  
+  /* Image styling for the banner */
+  .banner-image {
+    width: 100%; /* Make the image take up full width */
+    height: auto; /* Ensure the height adjusts according to the width */
+    display: block;
+    object-fit: cover; /* To make sure the image covers the area without distorting */
+  }
+  

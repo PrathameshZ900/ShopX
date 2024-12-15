@@ -1,0 +1,18 @@
+
+  
+.welcome-message{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 650;
+    color: rgb(68, 67, 67);
+}  
+
+  
+
+  
+  @media (max-width: 768px) {
+    .welcome-message {
+      font-size: 20px;
+      padding: 15px;
+    }
+  }
