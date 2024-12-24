@@ -1,0 +1,25 @@
+.score-container {
+    background-color: #f9f9f9; /* Light background for contrast */
+    /* border: 1px solid #ddd; Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding-left: 20px; /* Padding for spacing */
+    max-width: 100%; /* Full width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.score-title {
+    font-size: 1.5em; /* Larger font size for the title */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.score-description {
+    font-size: 1em; /* Normal font size for description */
+    color: #666; /* Lighter text color for description */
+}
+
+.score-description p {
+    margin: 0; /* Remove default margin */
+}

@@ -1,16 +1,78 @@
-/* Container for the banner */
-.banner-container {
-    width: 100%;
-    position: relative;
-    padding-bottom: 12.4378%; /* Responsive aspect ratio for the banner */
-    overflow: hidden; /* To prevent the image from overflowing */
-  }
+.board-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.board-link {
+  display: block;
+}
+
+.image-wrapper {
+  width: 100%;
+  padding-bottom: 12.4378%; /* Aspect ratio of the image */
+  position: relative;
+}
+
+.board-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-container {
+  padding-bottom: 350px;
+  position: absolute;
+  bottom: 10%;  /* Adjusts button to appear closer to the bottom */
+  right: 10%;   /* Aligns the button to the right of the image */
+  text-align: center;
+  transform: translate(50%, 50%);  /* Fine-tune positioning */
+}
+
+.cta-text {
+  font-size: 16px;
+}
+
+.cta-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cta-item {
+  margin: 10px 0;
+}
+
+.cta-link {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4a90e2;
+  margin-left: 100px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-link:hover {
+  background-color: #2563eb;
+}
+
+.cta-text-span {
+  font-size: 18px;
+}
+
+
+#learn{
+  text-decoration: underline;
+  color: black;
+  background: none; 
+  padding: 10px;
   
-  /* Image styling for the banner */
-  .banner-image {
-    width: 100%; /* Make the image take up full width */
-    height: auto; /* Ensure the height adjusts according to the width */
-    display: block;
-    object-fit: cover; /* To make sure the image covers the area without distorting */
-  }
-  
+}

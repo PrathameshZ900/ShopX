@@ -1,0 +1,37 @@
+.gift-nav {
+    margin-bottom: 20px;
+    width: 95%;
+    margin: 20px;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack header and menu vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+  }
+  
+  hr {
+    border: none; /* Remove the default border */
+    height: 4px; /* Set the height to 4px */
+    background-color: #000; /* Set the color to black or any color you prefer */
+    margin: 20px 0; /* Add space above and below the <hr> */
+  }
+  
+  
+
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure header takes full width */
+    margin-bottom: 10px;
+  }
+  
+  .nav-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .view-all {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }

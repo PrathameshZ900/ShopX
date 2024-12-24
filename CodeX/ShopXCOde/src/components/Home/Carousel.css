@@ -1,0 +1,85 @@
+/* Carousel.css */
+.carousel {
+    position: relative;
+    max-width: 100%; /* Full width */
+    margin: auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #f4f4f9; /* Light background */
+  }
+  
+  .carousel-content {
+    display: flex; /* Flexbox for horizontal layout */
+    transition: transform 0.5s ease; /* Smooth transition for slide change */
+  }
+  
+  .carousel-slide {
+    min-width: 100%; /* Each slide takes full width */
+    opacity: 0; /* Hide all slides initially */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    position: relative; /* Position for overlay */
+  }
+  
+  .carousel-slide.active {
+    opacity: 1; /* Show active slide */
+  }
+  
+  .slide-link {
+    display: block; /* Block display for link */
+  }
+  
+  .slide-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners for images */
+  }
+  
+  .overlay {
+    position: absolute; /* Position overlay on top of the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex; /* Center the text */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text color */
+    opacity: 0; /* Hide overlay initially */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+  }
+  
+  .carousel-slide:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .nav-button {
+    position : absolute; /* Position buttons on the sides */
+    top: 50%; /* Center vertically */
+    /* transform: translateY(-50%); Adjust for perfect centering */
+    background-color: rgba(106, 106, 106, 0.8); /* Semi-transparent background */
+    border: none; /* Remove default border */
+    border-radius: 50%; /* Circular buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Padding for buttons */
+    z-index: 10; /* Ensure buttons are above other elements */
+  }
+  
+  .prev {
+    left: 10px; /* Position left button */
+  }
+  
+  .next {
+    right: 10px; /* Position right button */
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Solid background on hover */
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-button {
+      padding: 8px; /* Smaller padding for mobile */
+    }
+  }

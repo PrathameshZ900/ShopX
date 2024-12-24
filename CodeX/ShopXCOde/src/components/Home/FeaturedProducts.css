@@ -1,0 +1,106 @@
+/* FeaturedProducts.css */
+.featured-products {
+    padding: 30px;
+    background-color: #f4f4f9; /* Light background for modern look */
+    border-radius: 15px; /* Larger rounded corners for a sleek look */
+    max-width: 90%; /* Ensure it stretches fully */
+    margin: 30px auto;
+    width: 100%; /* Take full width of the screen */
+    overflow: hidden;
+}
+
+.featured-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for shadow and scaling */
+}
+
+.featured-header h4 {
+    font-size: 36px; /* Larger header font */
+    font-weight: 700; /* Bold header */
+    color: #2c3e50; /* Darker, more vibrant text color */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Slight spacing between letters */
+}
+
+.featured-header p {
+    font-size: 18px;
+    color: #7f8c8d; /* Lighter gray for a modern feel */
+    font-style: italic;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Responsive grid */
+    gap: 20px; /* Increased space between items */
+    margin-top: 20px;
+}
+
+.product-item {
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for shadow and scaling */
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-image {
+    width: 100%;
+    height: auto; /* Allow height to adjust based on width */
+    max-height: 300px; /* Set a maximum height for consistency */
+    object-fit: cover; /* Cover image to maintain aspect ratio */
+}
+
+.product-title {
+    display: block;
+    padding: 15px 10px; /* Padding around title */
+    text-align: center;
+    font-size: 18px; /* Larger font size for product title */
+    color: #34495e; /* Slightly muted dark color */
+    border-top: 2px solid #ddd; /* Subtle border */
+    font-weight: 600; /* Bold font for product title */
+}
+
+.product-title:hover {
+    color: #2980b9; /* Change to blue on hover */
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+@media (max-width: 768px) {
+    .featured-products {
+        padding: 15px;
+    }
+
+    .featured-header h4 {
+        font-size: 28px;
+    }
+
+    .featured-header p {
+        font-size: 16px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack products on smaller screens */
+    }
+
+    .product-image {
+        height: auto; /* Allow height to adjust based on width */
+        max-height: 180px; /* Adjust image height for smaller screens */
+    }
+}

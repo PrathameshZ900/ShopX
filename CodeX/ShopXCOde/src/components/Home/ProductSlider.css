@@ -1,0 +1,124 @@
+.product-recommendations {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.8rem; /* Slightly larger font size */
+  color: #333; /* Dark text color */
+}
+
+.header a {
+  text-decoration: none;
+  color: #007bff; /* Primary link color */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header a:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.product-list {
+  display: flex;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px; /* Increased gap for better spacing */
+  transition: transform 0.5s ease;
+}
+
+.product-item {
+  flex: 0 0 20%; /* Default width for product items */
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #ffffff; /* White background for product items */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); Deeper shadow on hover */
+}
+
+.product-image {
+  width: 100%;
+  max-height: 150px; /* Limit height for images */
+  object-fit: cover; /* Cover the area without distortion */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-info h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem; /* Font size for product name */
+  color: #333; /* Dark text color */
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 1rem; /* Font size for price */
+  color: #555; /* Slightly lighter text color */
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 12px 18px; /* Padding for buttons */
+  border-radius: 50%; /* Circular buttons */
+  cursor: pointer;
+  font-size: 1.2rem; /* Font size for buttons */
+  margin: 0 10px; /* Margin between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #007bff; /* Change background on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.nav-button:disabled {
+  background-color: #ccc; /* Gray background for disabled buttons */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    flex: 0 0 45%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex: 0 0 90%; /* Stack items on very small screens */
+  }
+}

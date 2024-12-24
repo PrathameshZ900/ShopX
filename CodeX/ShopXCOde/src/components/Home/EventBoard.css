@@ -1,0 +1,118 @@
+/* Main container for the event board */
+.event-board {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Space items evenly */
+    gap: 20px; /* Space between rows and columns */
+    width: 90%; /* Full width of the container */
+    padding: 20px;
+    margin: 0 auto; /* Center the container */
+    list-style: none;
+}
+
+/* Individual event item */
+.event-item {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row with gap adjustments */
+    max-width: calc(33.33% - 20px); /* Prevent cards from exceeding their allocated space */
+    box-sizing: border-box; /* Include padding and borders in size calculations */
+    scroll-snap-align: start;
+}
+
+/* Event card styling */
+.event-card {
+    background-color: #fff;
+    /* border-radius: 10px; */
+    width: 100%; /* Take full width of its parent */
+    max-width: 100%; /* Prevent overflow */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect for event card */
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.event-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Content container for event details */
+.event-content {
+    padding: 15px;
+}
+
+/* Title styling */
+.event-title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center; /* Center the title */
+}
+
+/* Countdown styling */
+.event-countdown {
+    font-size: 1em;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Pagination button styling */
+.pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Disabled button styling */
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Hover effect for pagination buttons */
+.pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .event-item {
+        flex: 1 1 100%; /* Stack items in a single column */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .event-card {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+.event-board {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .event-board.fade {
+    opacity: 0;
+  }

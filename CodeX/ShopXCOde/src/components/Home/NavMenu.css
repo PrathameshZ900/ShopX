@@ -1,0 +1,65 @@
+.nav-menu {
+  /* background-color: #f8f8f8; Light gray background */
+  padding: 10px 20px; /* Padding for top/bottom and left/right */
+  border-radius: 5px; /* Rounded corners */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+  
+  
+}
+
+.nav-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Space between items */
+}
+
+.nav-item {
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark gray text color */
+  font-weight: 500; /* Medium font weight */
+  padding: 5px 10px; /* Padding for clickable area */
+  position: relative; /* Position relative for the pseudo-element */
+}
+
+.nav-link::after {
+  content: ''; /* Create a pseudo-element for the underline */
+  display: block; /* Make it a block element */
+  height: 2px; /* Height of the underline */
+  background-color: transparent; /* Start with transparent */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align to the left */
+  bottom: -2px; /* Position it below the text */
+  width: 100%; /* Full width */
+  transition: background-color 0.3s; /* Smooth transition for the underline */
+}
+
+#hr {
+  border: none; /* Remove the default border */
+  height: 4px; /* Set the height to 4px */
+  background-color: #000; /* Set the color to black or any color you prefer */
+  margin: 20px 0; /* Optional: Add space above and below the <hr> */
+}
+
+
+.nav-link:hover::after {
+  background-color: #494949; /* Change to blue on hover */
+  
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the left */
+  }
+
+  .nav-item {
+      margin-bottom: 10px; /* Space between stacked items */
+  }
+}
