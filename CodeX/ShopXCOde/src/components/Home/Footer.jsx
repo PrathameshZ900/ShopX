@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-section">
-                    <h3>Nordstrom Rack &amp; the Community</h3>
+                    <h3>  The Community</h3>
                     <ul className="footer-links">
                         <li><a aria-label="Corporate Social Responsibility" href="https://www.nordstromrack.com/promo/nordstrom-cares">Corporate Social Responsibility</a></li>
                         <li><a aria-label="Diversity, Equity, Inclusion &amp; Belonging" href="https://www.nordstromrack.com/promo/diversity-at-nordstrom">Diversity, Equity, Inclusion &amp; Belonging</a></li>
@@ -66,10 +66,9 @@ const Footer = () => {
                 </section>
                 <section id="social-links">
                 <ul className="social-icons">
-                        <li><a aria-label="Facebook" href="https://www.facebook.com/nordstromrack"><img src="facebook-icon.svg" alt="Facebook" /></a></li>
-                        <li><a aria-label="Twitter" href="https://twitter.com/nordstromrack"><img src="twitter-icon.svg" alt="Twitter" /></a></li>
-                        <li><a aria-label="Instagram" href="https://www.instagram.com/nordstromrack"><img src="instagram-icon.svg" alt="Instagram" /></a></li>
-                        <li><a aria-label="Pinterest" href="https://www.pinterest.com/nordstromrack"><img src="pinterest-icon.svg" alt="Pinterest" /></a></li>
+                        <li><a aria-label="Facebook" href="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"><img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" alt="Facebook" /></a></li>
+                        <li><a aria-label="Twitter" href="https://twitter.com/nordstromrack"><img src="https://www.svgrepo.com/show/475689/twitter-color.svg" alt="Twitter" /></a></li>
+                        <li><a aria-label="Instagram" href="https://www.instagram.com/nordstromrack"><img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram" /></a></li>
                     </ul>
                 </section>
             </div>
@@ -80,7 +79,7 @@ const Footer = () => {
                     <li><a aria-label="Terms &amp; Conditions" href="https://www.nordstromrack.com/terms">Terms &amp; Conditions</a></li>
                     <li><a aria-label="California Supply Chain Act" href="https://www.nordstrom.com/browse/nordstrom-cares/strategy-governance-reporting/ctsc-disclosure">California Supply Chain Act</a></li>
                 </ul>
-                <p>©2024 Nordstrom Rack</p>
+                <p>©2024 Nordstrom Rack,(<i>Created By Prathamesh Magar #PrathameshZ900</i> )</p>
             </div>
         </nav>
     );
